@@ -14,4 +14,9 @@ class Post extends Model
         "title",
         "body"
     ];
+
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
